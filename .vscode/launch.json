@@ -17,5 +17,26 @@
             "disableOptimisticBPs": true,
             "program": "${workspaceFolder}/node_modules/jest/bin/jest"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ],
+
+            "name": "hypervisor run",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                // "DEBUG": "1"
+            },
+            "outputCapture": "std",
+            "program": "${workspaceFolder}/bin/cli.js",
+            "args": [
+                "hypervisor",
+                "run",
+                // "--quiet",
+                "--socket=/tmp/emergence.debug.sock"
+            ]
+        },
     ]
 }
