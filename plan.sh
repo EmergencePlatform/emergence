@@ -8,11 +8,9 @@ pkg_build_deps=(
   core/jq-static
   jarvus/hologit
 )
-
 pkg_deps=(
   core/node
 )
-
 pkg_bin_dirs=(bin)
 
 
