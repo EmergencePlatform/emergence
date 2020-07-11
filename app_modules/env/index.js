@@ -60,7 +60,7 @@ try {
 
   // Parsing error
   if (!errors) {
-    console.error('Error parsing env-schema file (.env.yaml):')
+    console.error('Error parsing env-schema file (env.yaml):')
     console.error(e)
     process.exit(1)
   }
