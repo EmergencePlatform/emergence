@@ -1,0 +1,15 @@
+{
+  // Recommended by standardjs extension:
+  "javascript.validate.enable": false,
+  // Causes the debug view to automatically appear when a breakpoint is hit. This
+  // setting is global and not configurable per-language.
+  "debug.openDebug": "openOnDebugBreak",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.trimAutoWhitespace": true,
+  "rest-client.environmentVariables": {
+    "$shared": {}
+  }
+}
