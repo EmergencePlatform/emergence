@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "checkJs": true,
+        "noUnusedLocals": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+          "*": [ "app_modules/*" ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
