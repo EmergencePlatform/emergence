@@ -1,0 +1,12 @@
+[holomapping]
+files = [
+    "LICENSE",
+    "env.yaml",
+    "package.json",
+    "package-lock.json",
+    "app_modules/",
+    "bin/",
+    "commands/",
+    "lib/",
+    "hypervisor-api/"
+]
