@@ -24,8 +24,8 @@
   "homepage": "https://github.com/EmergencePlatform/emergence#readme",
   "dependencies": {
     "app-module-path": "^2.2.0",
+    "debug": "^4.1.1",
     "env-schema": "^1.1.0",
-    "git-repo-version": "^1.0.2",
     "mz": "^2.7.0",
     "pino": "^6.3.0",
     "pino-caller": "^3.0.2",

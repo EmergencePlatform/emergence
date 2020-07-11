@@ -10,11 +10,7 @@ require('app-module-path').addPath(`${__dirname}/../app_modules`)
 // route command line
 // eslint-disable-next-line no-unused-expressions
 require('yargs')
-  .version(
-    require('git-repo-version')({
-      shaLength: 10,
-      includeDate: true
-    }))
+  .version(require('../package.json').version)
   .option('d', {
     alias: 'debug',
     type: 'boolean',
@@ -40,10 +36,10 @@ require('yargs')
   .demandCommand()
   .showHelpOnFail(false, 'Specify --help for available options')
   .fail((msg, err) => {
-    logger.error(msg || err.message)
+    console.error(msg || err.message)
 
     if (err) {
-      logger.debug(err.stack)
+      console.error(err.stack)
     }
 
     process.exit(1)
